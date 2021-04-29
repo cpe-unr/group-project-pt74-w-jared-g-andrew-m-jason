@@ -10,10 +10,9 @@ loadBuffer::~loadBuffer(){
 }	
 
 void loadBuffer::readFile(const std::string &fileName){
-	std::ifstream file(fileName,std::ios::binary | std::ios::in);
+	std::ifstream file(fileName, std::ios::binary | std::ios::in);
 	if(file.is_open()){
 		file.read((char*)&waveHeader, sizeof(wav_header));
-		std::cout << "Hello" << std::endl;
 	}
 	if(waveHeader.bit_depth == 8){
 		std::cout << "Reading 8 bit audio" << std::endl;

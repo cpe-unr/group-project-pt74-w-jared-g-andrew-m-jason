@@ -1,16 +1,16 @@
 #include <iostream>
 #include <fstream>
-#include <dirent.h>
+#include "waveheader.h"
 #include <vector>
 #include "loadbuffer.h"
+#include "filegetter.h"
 
 int main(){
-	/*int userChoice = 10;
-	std::string fileName;
-	loadBuffer a;
-	std::cout << "Enter a filename:" << std::endl;
-	std::cin >> fileName;
-	while(userChoice != 0){
+	int userChoice = 10;
+	std::string directoryName;
+	std::cout << "Enter a directory:" << std::endl;
+	std::cin >> directoryName;
+	/*while(userChoice != 0){
 		std::cout << "What processing do you want done?" << std::endl;
 		std::cout << "0: Exit Program" << std::endl;
 		std::cout << "1: Normalization" << std::endl;
@@ -41,21 +41,17 @@ int main(){
 	}
 	//a.readFile(fileName);
 	//a.writeFile("hello.wav");*/
-	
-	DIR *dir;
-	struct dirent *diread;
-	std::vector<std::string> files;
-	if((dir = opendir("wavefiles")) != nullptr){
-		while ((diread = readdir(dir)) != nullptr){
-			files.push_back(diread->d_name);
-		}
-		closedir(dir);
-	}
+	std::string fileName;
+	fileGetter a;
+	std::vector<std::string> files = a.getFiles(directoryName);
 	for(std::string file : files){
 		loadBuffer a;
 		a.readFile(file);
-		std::cout << file << std::endl;
+		std::cout << "Enter a name for copy: ";
+		std::cin >> fileName;
+		a.writeFile(fileName);
 	}
-	
+	//loadBuffer a;
+	//a.readFile("wavefiles/yes-8bit-mono.wav");
 	return 0;
 }
