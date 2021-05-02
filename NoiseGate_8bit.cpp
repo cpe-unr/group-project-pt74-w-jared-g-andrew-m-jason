@@ -6,8 +6,14 @@ NoiseGate::NoiseGate(uint8_t initThreshold){
 }
 
 void NoiseGate::processBuffer(unsigned char *buffer, int bufferSize){
+	
 	for(int i = 1; i < bufferSize; i++){
 		if(buffer[i] > (ZERO - threshold) && buffer[i] < (ZERO + threshold))
-			buffer[i] = ZERO;
-		}
-}
+				buffer[i] = ZERO;
+				}
+			}
+			
+	
+	
+	
+

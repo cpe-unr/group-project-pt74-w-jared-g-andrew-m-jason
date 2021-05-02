@@ -1,7 +1,7 @@
 /** @file */
 #include <iostream>
 
-/**
+/*
  * \brief   The function bar.
  *
  * \details This function does something which is doing nothing. So this text
