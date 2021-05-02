@@ -27,14 +27,20 @@ void loadBuffer::readFile(const std::string &fileName){
 	file.close();
 }
 
-void loadBuffer::writeFile(const std::string &outFileName){
+void loadBuffer::writeFile(){
 	if(waveHeader.bit_depth == 8){
+		std::string outFileName;
+		std::cout << "Enter a name for the new file: ";
+		std::cin >> outFileName;
 		std::ofstream outFile(outFileName, std::ios::out | std::ios::binary);
 		outFile.write((char*)&waveHeader,sizeof(wav_header));
 		outFile.write((char*)BitBuffer8, waveHeader.data_bytes);
 		outFile.close();	
 	}
 	if(waveHeader.bit_depth == 16){
+		std::string outFileName;
+		std::cout << "Enter a name for the new file: ";
+		std::cin >> outFileName;
 		std::ofstream outFile(outFileName, std::ios::out | std::ios::binary);
 		outFile.write((char*)&waveHeader,sizeof(wav_header));
 		outFile.write((char*)BitBuffer16, waveHeader.data_bytes);

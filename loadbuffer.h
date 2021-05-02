@@ -15,7 +15,7 @@ public:
 	virtual ~loadBuffer();
 	
 	void readFile(const std::string &fileName);
-	void writeFile(const std::string &outFileName);
+	void writeFile();
 	unsigned char* get8Buffer();
 	short* get16Buffer();
 	int getBufferSize();
