@@ -5,29 +5,15 @@ NoiseGate::NoiseGate(uint8_t initThreshold){
 	threshold = initThreshold;
 }
 
-void NoiseGate::processBuffer(unsigned char *buffer, int bufferSize, char mono_or_Rstero_or_Lstero){
-	if (mono_or_Rstero_or_Lstero == mono){
+void NoiseGate::processBuffer(unsigned char *buffer, int bufferSize){
 	
-		for(int i = 1; i < bufferSize; i++){
-			if(buffer[i] > (ZERO - threshold) && buffer[i] < (ZERO + threshold))
+	for(int i = 1; i < bufferSize; i++){
+		if(buffer[i] > (ZERO - threshold) && buffer[i] < (ZERO + threshold))
 				buffer[i] = ZERO;
 				}
 			}
 			
-	else if(mono_or_Rstero_or_Lstero == Rstero){
 	
-		for(int i = 1; i < bufferSize; i = i + 2){
-			if(buffer[i] > (ZERO - threshold) && buffer[i] < (ZERO + threshold))
-				buffer[i] = ZERO;
-				}
-			}
 	
-	else if(mono_or_Rstero_or_Lstero == Lstero){
 	
-		for(int i = 2; i < bufferSize; i = i + 2){
-			if(buffer[i] > (ZERO - threshold) && buffer[i] < (ZERO + threshold))
-				buffer[i] = ZERO;
-				}
-			}
-	
-}
+
