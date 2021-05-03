@@ -11,6 +11,6 @@ Jason M. - Reading in Audio Information, Reading Metadata
 Jared W. - Doxygen, UML Diagrams
 
 # UML Diagrams and Design Desc.
-image::class-diagram.png[]
+![Class Diagram](/class-diagram.png)
 
 # Problems Encountered
