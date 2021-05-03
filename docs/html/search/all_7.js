@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['wav_5fheader',['wav_header',['../structwav__header.html',1,'']]]
+  ['loadbuffer',['loadBuffer',['../classloadBuffer.html',1,'']]],
+  ['loadbuffer_2ecpp',['loadbuffer.cpp',['../loadbuffer_8cpp.html',1,'']]],
+  ['loadbuffer_2eh',['loadbuffer.h',['../loadbuffer_8h.html',1,'']]]
 ];

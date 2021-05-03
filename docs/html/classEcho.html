@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My Project: Echo Class Reference</title>
+<title>PT47 Final Project: Echo Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My Project
+   <div id="projectname">PT47 Final Project
    </div>
   </td>
  </tr>
@@ -65,31 +65,106 @@ $(function() {
 <div class="title">Echo Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><code>#include &lt;<a class="el" href="Echo_8h_source.html">Echo.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Echo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEcho__inherit__graph.png" border="0" usemap="#Echo_inherit__map" alt="Inheritance graph"/></div>
 <!-- MAP 0 -->
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+</div>
 <div class="dynheader">
 Collaboration diagram for Echo:</div>
 <div class="dyncontent">
 <div class="center"><img src="classEcho__coll__graph.png" border="0" usemap="#Echo_coll__map" alt="Collaboration graph"/></div>
 <!-- MAP 1 -->
-<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9531515ffab8be1e38cbdc0e0e9338a6"><td class="memItemLeft" align="right" valign="top"><a id="a9531515ffab8be1e38cbdc0e0e9338a6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Echo</b> (int delay)</td></tr>
+<tr class="memitem:a9531515ffab8be1e38cbdc0e0e9338a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcho.html#a9531515ffab8be1e38cbdc0e0e9338a6">Echo</a> (int delay)</td></tr>
 <tr class="separator:a9531515ffab8be1e38cbdc0e0e9338a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae915d9d4065a34411d18791a5ae9006b"><td class="memItemLeft" align="right" valign="top"><a id="ae915d9d4065a34411d18791a5ae9006b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>processBuffer</b> (unsigned char *buffer, int bufferSize) override</td></tr>
+<tr class="memitem:ae915d9d4065a34411d18791a5ae9006b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEcho.html#ae915d9d4065a34411d18791a5ae9006b">processBuffer</a> (unsigned char *buffer, int bufferSize) override</td></tr>
 <tr class="separator:ae915d9d4065a34411d18791a5ae9006b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This is the <a class="el" href="classEcho.html">Echo</a> class that inherits from the <a class="el" href="classProcessor.html">Processor</a> class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a9531515ffab8be1e38cbdc0e0e9338a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9531515ffab8be1e38cbdc0e0e9338a6">&#9670;&nbsp;</a></span>Echo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Echo::Echo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor that takes in the delay foor the <a class="el" href="classEcho.html">Echo</a> </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delay</td><td>- delay rate as an integer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae915d9d4065a34411d18791a5ae9006b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae915d9d4065a34411d18791a5ae9006b">&#9670;&nbsp;</a></span>processBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Echo::processBuffer </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufferSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Overrides the processBuffer function </p>
+
+<p>Implements <a class="el" href="classProcessor.html#a401e57b59e43de9c4a51ca0f566d2948">Processor</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Echo_8h_source.html">Echo.h</a></li>
-<li>Echo.cpp</li>
+<li><a class="el" href="Echo_8cpp.html">Echo.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

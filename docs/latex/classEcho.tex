@@ -2,6 +2,10 @@
 \label{classEcho}\index{Echo@{Echo}}
 
 
+{\ttfamily \#include $<$Echo.\+h$>$}
+
+
+
 Inheritance diagram for Echo\+:
 % FIG 0
 
@@ -11,15 +15,43 @@ Collaboration diagram for Echo\+:
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}\label{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}} 
-{\bfseries Echo} (int delay)
+\hyperlink{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}{Echo} (int delay)
 \item 
-\mbox{\Hypertarget{classEcho_ae915d9d4065a34411d18791a5ae9006b}\label{classEcho_ae915d9d4065a34411d18791a5ae9006b}} 
-void {\bfseries process\+Buffer} (unsigned char $\ast$buffer, int buffer\+Size) override
+void \hyperlink{classEcho_ae915d9d4065a34411d18791a5ae9006b}{process\+Buffer} (unsigned char $\ast$buffer, int buffer\+Size) override
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the \hyperlink{classEcho}{Echo} class that inherits from the \hyperlink{classProcessor}{Processor} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}\label{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}} 
+\index{Echo@{Echo}!Echo@{Echo}}
+\index{Echo@{Echo}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{Echo()}{Echo()}}
+{\footnotesize\ttfamily Echo\+::\+Echo (\begin{DoxyParamCaption}\item[{int}]{delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor that takes in the delay foor the \hyperlink{classEcho}{Echo} 
+\begin{DoxyParams}{Parameters}
+{\em delay} & -\/ delay rate as an integer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEcho_ae915d9d4065a34411d18791a5ae9006b}\label{classEcho_ae915d9d4065a34411d18791a5ae9006b}} 
+\index{Echo@{Echo}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Overrides the process\+Buffer function 
+
+Implements \hyperlink{classProcessor_a401e57b59e43de9c4a51ca0f566d2948}{Processor}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Echo.\+h\item 
-Echo.\+cpp\end{DoxyCompactItemize}
+\hyperlink{Echo_8h}{Echo.\+h}\item 
+\hyperlink{Echo_8cpp}{Echo.\+cpp}\end{DoxyCompactItemize}
