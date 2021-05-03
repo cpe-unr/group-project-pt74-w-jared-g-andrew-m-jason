@@ -8,4 +8,6 @@ digraph "Graphical Class Hierarchy"
   Node1 [label="Echo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEcho.html"];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
   Node2 [label="NoiseGate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNoiseGate.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Normalizer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNormalizer.html"];
 }

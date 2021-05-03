@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['bit_5fdepth',['bit_depth',['../structwav__header.html#a63fa60069060bae97c8a64c5b37afa23',1,'wav_header']]],
-  ['byte_5frate',['byte_rate',['../structwav__header.html#a8330740d45200d6aee4ba54fc0d834d8',1,'wav_header']]]
+  ['echo',['Echo',['../classEcho.html',1,'Echo'],['../classEcho.html#a9531515ffab8be1e38cbdc0e0e9338a6',1,'Echo::Echo(int delay)'],['../classEcho.html#a9531515ffab8be1e38cbdc0e0e9338a6',1,'Echo::Echo(int delay)']]]
 ];

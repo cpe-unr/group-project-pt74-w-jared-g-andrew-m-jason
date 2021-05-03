@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['echo',['Echo',['../classEcho.html#a9531515ffab8be1e38cbdc0e0e9338a6',1,'Echo']]]
+  ['echo',['Echo',['../classEcho.html#a9531515ffab8be1e38cbdc0e0e9338a6',1,'Echo::Echo(int delay)'],['../classEcho.html#a9531515ffab8be1e38cbdc0e0e9338a6',1,'Echo::Echo(int delay)']]]
 ];

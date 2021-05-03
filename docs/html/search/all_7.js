@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['loadbuffer',['loadBuffer',['../classloadBuffer.html',1,'']]],
-  ['loadbuffer_2ecpp',['loadbuffer.cpp',['../loadbuffer_8cpp.html',1,'']]],
-  ['loadbuffer_2eh',['loadbuffer.h',['../loadbuffer_8h.html',1,'']]]
+  ['processbuffer',['processBuffer',['../classEcho.html#a18d9d3ec6f9a225810dbe5965e988de9',1,'Echo::processBuffer(short *buffer, int bufferSize) override'],['../classEcho.html#ae915d9d4065a34411d18791a5ae9006b',1,'Echo::processBuffer(unsigned char *buffer, int bufferSize) override']]],
+  ['processor',['Processor',['../classProcessor.html',1,'']]]
 ];

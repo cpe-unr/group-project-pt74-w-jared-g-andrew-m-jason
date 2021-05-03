@@ -2,7 +2,7 @@
 \label{classEcho}\index{Echo@{Echo}}
 
 
-{\ttfamily \#include $<$Echo.\+h$>$}
+{\ttfamily \#include $<$Echo\+\_\+16\+Bit.\+h$>$}
 
 
 
@@ -17,6 +17,10 @@ Collaboration diagram for Echo\+:
 \item 
 \hyperlink{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}{Echo} (int delay)
 \item 
+void \hyperlink{classEcho_a18d9d3ec6f9a225810dbe5965e988de9}{process\+Buffer} (short $\ast$buffer, int buffer\+Size) override
+\item 
+\hyperlink{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}{Echo} (int delay)
+\item 
 void \hyperlink{classEcho_ae915d9d4065a34411d18791a5ae9006b}{process\+Buffer} (unsigned char $\ast$buffer, int buffer\+Size) override
 \end{DoxyCompactItemize}
 
@@ -28,7 +32,18 @@ This is the \hyperlink{classEcho}{Echo} class that inherits from the \hyperlink{
 \mbox{\Hypertarget{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}\label{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}} 
 \index{Echo@{Echo}!Echo@{Echo}}
 \index{Echo@{Echo}!Echo@{Echo}}
-\subsubsection{\texorpdfstring{Echo()}{Echo()}}
+\subsubsection{\texorpdfstring{Echo()}{Echo()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Echo\+::\+Echo (\begin{DoxyParamCaption}\item[{int}]{delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor that takes in the delay foor the \hyperlink{classEcho}{Echo} 
+\begin{DoxyParams}{Parameters}
+{\em delay} & -\/ delay rate as an integer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}\label{classEcho_a9531515ffab8be1e38cbdc0e0e9338a6}} 
+\index{Echo@{Echo}!Echo@{Echo}}
+\index{Echo@{Echo}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{Echo()}{Echo()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily Echo\+::\+Echo (\begin{DoxyParamCaption}\item[{int}]{delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 Constructor that takes in the delay foor the \hyperlink{classEcho}{Echo} 
@@ -39,19 +54,27 @@ Constructor that takes in the delay foor the \hyperlink{classEcho}{Echo}
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classEcho_ae915d9d4065a34411d18791a5ae9006b}\label{classEcho_ae915d9d4065a34411d18791a5ae9006b}} 
+\mbox{\Hypertarget{classEcho_a18d9d3ec6f9a225810dbe5965e988de9}\label{classEcho_a18d9d3ec6f9a225810dbe5965e988de9}} 
 \index{Echo@{Echo}!process\+Buffer@{process\+Buffer}}
 \index{process\+Buffer@{process\+Buffer}!Echo@{Echo}}
-\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Echo\+::process\+Buffer (\begin{DoxyParamCaption}\item[{short $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+Overrides the process\+Buffer function \mbox{\Hypertarget{classEcho_ae915d9d4065a34411d18791a5ae9006b}\label{classEcho_ae915d9d4065a34411d18791a5ae9006b}} 
+\index{Echo@{Echo}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Echo@{Echo}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void Echo\+::process\+Buffer (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Overrides the process\+Buffer function 
 
-Implements \hyperlink{classProcessor_a401e57b59e43de9c4a51ca0f566d2948}{Processor}.
+Implements \hyperlink{classProcessor}{Processor}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{Echo_8h}{Echo.\+h}\item 
-\hyperlink{Echo_8cpp}{Echo.\+cpp}\end{DoxyCompactItemize}
+Echo\+\_\+16\+Bit.\+h\item 
+Echo\+\_\+8\+Bit.\+h\item 
+Echo\+\_\+16\+Bit.\+cpp\item 
+Echo\+\_\+8\+Bit.\+cpp\end{DoxyCompactItemize}

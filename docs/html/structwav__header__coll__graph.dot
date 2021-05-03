@@ -1,6 +1,0 @@
-digraph "wav_header"
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  Node1 [label="{wav_header\n|+ riff_header\l+ wav_size\l+ wave_header\l+ fmt_header\l+ fmt_chunk_size\l+ audio_format\l+ num_channels\l+ sample_rate\l+ byte_rate\l+ sample_alignment\l+ bit_depth\l+ data_header\l+ data_bytes\l|}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
-}
