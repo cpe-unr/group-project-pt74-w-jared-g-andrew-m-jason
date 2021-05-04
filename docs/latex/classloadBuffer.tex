@@ -1,26 +1,69 @@
 \hypertarget{classloadBuffer}{}\section{load\+Buffer Class Reference}
 \label{classloadBuffer}\index{load\+Buffer@{load\+Buffer}}
+
+
+{\ttfamily \#include $<$loadbuffer.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}\label{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}} 
-void {\bfseries read\+File} (const std\+::string \&file\+Name)
+virtual \hyperlink{classloadBuffer_a569f285c4f37d2880c1619842d54917a}{$\sim$load\+Buffer} ()
 \item 
-\mbox{\Hypertarget{classloadBuffer_a0ebc8576784119627232cff763100695}\label{classloadBuffer_a0ebc8576784119627232cff763100695}} 
-void {\bfseries write\+File} (const std\+::string \&out\+File\+Name)
+void \hyperlink{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}{read\+File} (const std\+::string \&file\+Name)
 \item 
 \mbox{\Hypertarget{classloadBuffer_ace04b355c2b23c72abd1d322dcb960ee}\label{classloadBuffer_ace04b355c2b23c72abd1d322dcb960ee}} 
-unsigned char $\ast$ {\bfseries get8\+Buffer} ()
+$<$$<$$<$$<$$<$$<$$<$ H\+E\+AD void write\+File();=======void write\+File(const std\+::string \&out\+File\+Name);$>$$>$$>$$>$$>$$>$ unsigned char $\ast$ {\bfseries get8\+Buffer} ()
 \item 
-\mbox{\Hypertarget{classloadBuffer_aa6b14cb999de76cfce307f7036310859}\label{classloadBuffer_aa6b14cb999de76cfce307f7036310859}} 
-short $\ast$ {\bfseries get16\+Buffer} ()
+short $\ast$ \hyperlink{classloadBuffer_aa6b14cb999de76cfce307f7036310859}{get16\+Buffer} ()
 \item 
-\mbox{\Hypertarget{classloadBuffer_afdb86606188438cef499304c2a0af433}\label{classloadBuffer_afdb86606188438cef499304c2a0af433}} 
-int {\bfseries get\+Buffer\+Size} ()
+int \hyperlink{classloadBuffer_afdb86606188438cef499304c2a0af433}{get\+Buffer\+Size} ()
 \item 
-\mbox{\Hypertarget{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}\label{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}} 
-int {\bfseries get\+Bit\+Depth} ()
+int \hyperlink{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}{get\+Bit\+Depth} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the \hyperlink{classloadBuffer}{load\+Buffer} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classloadBuffer_a569f285c4f37d2880c1619842d54917a}\label{classloadBuffer_a569f285c4f37d2880c1619842d54917a}} 
+\index{load\+Buffer@{load\+Buffer}!````~load\+Buffer@{$\sim$load\+Buffer}}
+\index{````~load\+Buffer@{$\sim$load\+Buffer}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{$\sim$load\+Buffer()}{~loadBuffer()}}
+{\footnotesize\ttfamily load\+Buffer\+::$\sim$load\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Constructor for \hyperlink{classloadBuffer}{load\+Buffer}, does not have any parameters. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classloadBuffer_aa6b14cb999de76cfce307f7036310859}\label{classloadBuffer_aa6b14cb999de76cfce307f7036310859}} 
+\index{load\+Buffer@{load\+Buffer}!get16\+Buffer@{get16\+Buffer}}
+\index{get16\+Buffer@{get16\+Buffer}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{get16\+Buffer()}{get16Buffer()}}
+{\footnotesize\ttfamily short $\ast$ load\+Buffer\+::get16\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for the 16\+Bit buffer \mbox{\Hypertarget{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}\label{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}} 
+\index{load\+Buffer@{load\+Buffer}!get\+Bit\+Depth@{get\+Bit\+Depth}}
+\index{get\+Bit\+Depth@{get\+Bit\+Depth}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Bit\+Depth()}{getBitDepth()}}
+{\footnotesize\ttfamily int load\+Buffer\+::get\+Bit\+Depth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for the bit depth \mbox{\Hypertarget{classloadBuffer_afdb86606188438cef499304c2a0af433}\label{classloadBuffer_afdb86606188438cef499304c2a0af433}} 
+\index{load\+Buffer@{load\+Buffer}!get\+Buffer\+Size@{get\+Buffer\+Size}}
+\index{get\+Buffer\+Size@{get\+Buffer\+Size}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Buffer\+Size()}{getBufferSize()}}
+{\footnotesize\ttfamily int load\+Buffer\+::get\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for the buffer size \mbox{\Hypertarget{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}\label{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}} 
+\index{load\+Buffer@{load\+Buffer}!read\+File@{read\+File}}
+\index{read\+File@{read\+File}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{read\+File()}{readFile()}}
+{\footnotesize\ttfamily void load\+Buffer\+::read\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+Reads files from a constant string reference 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ Name of the file as a constant string reference \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

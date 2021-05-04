@@ -5,7 +5,11 @@ digraph "Processor"
   Node0 [label="Processor",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
   Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node1 [label="Echo",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEcho.html"];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
   Node2 [label="NoiseGate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNoiseGate.html"];
   Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Normalizer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classNormalizer.html"];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
 }
