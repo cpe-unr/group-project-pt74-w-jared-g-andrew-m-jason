@@ -41,9 +41,10 @@ public:
 	/**
 	* Writes CSV file containing metadata
 	* @param filename - Name of file as a constant string reference
+	* @param songTitle - Name of song title as a string
+	* @param artist - Name of artist as a string
 	*/
-	void writeCSV(const std::string &fileName);
-
+	void writeCSV(const std::string &fileName, std::string songTitle, std::string artist);
 	/**
 	* Getter for the 8bit buffer
 	*/

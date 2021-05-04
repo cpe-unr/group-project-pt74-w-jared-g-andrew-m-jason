@@ -110,7 +110,7 @@ void loadBuffer::writeFile(){
 	}
 }
 
-void loadBuffer::writeCSV(const std::string &fileName){
+void loadBuffer::writeCSV(const std::string &fileName, std::string songTitle, std::string artist){
 	std::ofstream outfile ("data.csv");
 	outfile << "Song Title, Artist"; // song title = first col/cell, artist = second col/first cell
 	outfile << getSongName() << "," << getArtist();

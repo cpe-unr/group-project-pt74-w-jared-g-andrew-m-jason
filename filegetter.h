@@ -17,6 +17,7 @@ private:
 public:
 	/**
 	* Gets files from a string directory
+	* @param directory - string 
 	*/
 	std::vector<std::string> getFiles(std::string directory);
 };

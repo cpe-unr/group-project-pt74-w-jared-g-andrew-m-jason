@@ -7,14 +7,18 @@ Andrew Gorum, Jason Mills, Jared White
 **Andrew G.**  
 1. 16Bit Processing
 2. Reading Metadata
+3. Echo, NoiseGate, Normalizer classes
 
 **Jason M.** 
-1. Reading in Audio Information  
-2. Reading Metadata
+1. Reading in Audio Information
+2. Writing Audio Information 
+3. Reading and Writing Metadata
+4. CSV
 
 **Jared W.**  
 1. Doxygen
 2. UML Diagrams
+3. CSV
 
 ## UML Diagrams and Design Desc.
 ![Class Diagram](/class-diagram.png)
@@ -40,10 +44,10 @@ The `LoadBuffer` class reads the file selected by the user and determines whethe
 
 ## Problems Encountered
 * Issues with reading and storing metadata, thus issues with exporting the CSV file
-* - Binary files cannot be seen like text files, making understanding them difficult
-* - Metadata format was an unknown and existing documentation for it was hard to understand
-* - Metadada could not easilty be read in with a struct, causing bulky code
-* - Metadata was not easy to write, causing bulky code
+* Binary files cannot be seen like text files, making understanding them difficult
+* Metadata format was an unknown and existing documentation for it was hard to understand
+* Metadata could not easilty be read in with a struct, causing bulky code
+* Metadata was not easy to write, causing bulky code
 * Difficulty getting Doxygen to install
 * Difficulty getting Doxygen to generate inheritance and collaboration charts
 * Difficulty adapting pre-existing processors to work for 16-bit audio

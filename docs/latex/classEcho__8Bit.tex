@@ -1,0 +1,86 @@
+\hypertarget{classEcho__8Bit}{}\section{Echo\+\_\+8\+Bit$<$ T $>$ Class Template Reference}
+\label{classEcho__8Bit}\index{Echo\+\_\+8\+Bit$<$ T $>$@{Echo\+\_\+8\+Bit$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Echo\+\_\+8\+Bit.\+h$>$}
+
+
+
+Inheritance diagram for Echo\+\_\+8\+Bit$<$ T $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Echo\+\_\+8\+Bit$<$ T $>$\+:
+% FIG 1
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEcho__8Bit_a19ea3f23dc06bdf6ef74f50e972accf2}{Echo\+\_\+8\+Bit} (int delay)
+\item 
+void \hyperlink{classEcho__8Bit_a01c7182a58f21a4a0bc0cd040720b109}{process\+Buffer} (T $\ast$buffer, int buffer\+Size) override
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{classEcho__8Bit_a2f1c64b678e48cc37f55739fd85e65b3}{Z\+E\+RO} = 128
+\item 
+float \hyperlink{classEcho__8Bit_a26bd2ba0910d1e4bb84357b6f83c776b}{S\+C\+A\+L\+E\+\_\+\+F\+A\+C\+T\+OR} = 0.\+5f
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Echo\+\_\+8\+Bit$<$ T $>$}
+
+This is the Echo class that inherits from the Processor class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEcho__8Bit_a19ea3f23dc06bdf6ef74f50e972accf2}\label{classEcho__8Bit_a19ea3f23dc06bdf6ef74f50e972accf2}} 
+\index{Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}!Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}}
+\index{Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}!Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}}
+\subsubsection{\texorpdfstring{Echo\+\_\+8\+Bit()}{Echo\_8Bit()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\hyperlink{classEcho__8Bit}{Echo\+\_\+8\+Bit}$<$ T $>$\+::\hyperlink{classEcho__8Bit}{Echo\+\_\+8\+Bit} (\begin{DoxyParamCaption}\item[{int}]{delay }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Constructor that takes in the delay for the Echo (8bit) 
+\begin{DoxyParams}{Parameters}
+{\em delay} & -\/ delay rate as an integer \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classEcho__8Bit_a01c7182a58f21a4a0bc0cd040720b109}\label{classEcho__8Bit_a01c7182a58f21a4a0bc0cd040720b109}} 
+\index{Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}!process\+Buffer@{process\+Buffer}}
+\index{process\+Buffer@{process\+Buffer}!Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}}
+\subsubsection{\texorpdfstring{process\+Buffer()}{processBuffer()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \hyperlink{classEcho__8Bit}{Echo\+\_\+8\+Bit}$<$ T $>$\+::process\+Buffer (\begin{DoxyParamCaption}\item[{T $\ast$}]{buffer,  }\item[{int}]{buffer\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Overrides the process\+Buffer function 
+
+Implements \hyperlink{classprocessor_ab23d53c7dd927e50108272ee007dcc29}{processor$<$ T $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classEcho__8Bit_a26bd2ba0910d1e4bb84357b6f83c776b}\label{classEcho__8Bit_a26bd2ba0910d1e4bb84357b6f83c776b}} 
+\index{Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}!S\+C\+A\+L\+E\+\_\+\+F\+A\+C\+T\+OR@{S\+C\+A\+L\+E\+\_\+\+F\+A\+C\+T\+OR}}
+\index{S\+C\+A\+L\+E\+\_\+\+F\+A\+C\+T\+OR@{S\+C\+A\+L\+E\+\_\+\+F\+A\+C\+T\+OR}!Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}}
+\subsubsection{\texorpdfstring{S\+C\+A\+L\+E\+\_\+\+F\+A\+C\+T\+OR}{SCALE\_FACTOR}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+float \hyperlink{classEcho__8Bit}{Echo\+\_\+8\+Bit}$<$ T $>$\+::S\+C\+A\+L\+E\+\_\+\+F\+A\+C\+T\+OR = 0.\+5f}
+
+\mbox{\Hypertarget{classEcho__8Bit_a2f1c64b678e48cc37f55739fd85e65b3}\label{classEcho__8Bit_a2f1c64b678e48cc37f55739fd85e65b3}} 
+\index{Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}!Z\+E\+RO@{Z\+E\+RO}}
+\index{Z\+E\+RO@{Z\+E\+RO}!Echo\+\_\+8\+Bit@{Echo\+\_\+8\+Bit}}
+\subsubsection{\texorpdfstring{Z\+E\+RO}{ZERO}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+uint8\+\_\+t \hyperlink{classEcho__8Bit}{Echo\+\_\+8\+Bit}$<$ T $>$\+::Z\+E\+RO = 128}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Echo__8Bit_8h}{Echo\+\_\+8\+Bit.\+h}\item 
+\hyperlink{Echo__8Bit_8cpp}{Echo\+\_\+8\+Bit.\+cpp}\end{DoxyCompactItemize}

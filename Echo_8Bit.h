@@ -15,7 +15,7 @@ private:
 	int delay;
 public:
 	/** 
-	* Constructor that takes in the delay foor the Echo
+	* Constructor that takes in the delay for the Echo (8bit)
 	* @param delay - delay rate as an integer
 	*/
 	explicit Echo_8Bit(int delay);

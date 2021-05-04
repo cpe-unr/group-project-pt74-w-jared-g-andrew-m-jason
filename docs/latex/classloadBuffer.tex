@@ -4,6 +4,10 @@
 
 {\ttfamily \#include $<$loadbuffer.\+h$>$}
 
+
+
+Collaboration diagram for load\+Buffer\+:
+% FIG 0
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -11,14 +15,27 @@ virtual \hyperlink{classloadBuffer_a569f285c4f37d2880c1619842d54917a}{$\sim$load
 \item 
 void \hyperlink{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}{read\+File} (const std\+::string \&file\+Name)
 \item 
-\mbox{\Hypertarget{classloadBuffer_ace04b355c2b23c72abd1d322dcb960ee}\label{classloadBuffer_ace04b355c2b23c72abd1d322dcb960ee}} 
-$<$$<$$<$$<$$<$$<$$<$ H\+E\+AD void write\+File();=======void write\+File(const std\+::string \&out\+File\+Name);$>$$>$$>$$>$$>$$>$ unsigned char $\ast$ {\bfseries get8\+Buffer} ()
+void \hyperlink{classloadBuffer_af32a4655ecfa6ec67862fc85c0fac0a3}{write\+File} ()
+\item 
+void \hyperlink{classloadBuffer_a0ebc8576784119627232cff763100695}{write\+File} (const std\+::string \&out\+File\+Name)
+\item 
+void \hyperlink{classloadBuffer_aa22aefdaddbb00ff09c0e18ba5922dff}{write\+C\+SV} (const std\+::string \&file\+Name, std\+::string song\+Title, std\+::string artist)
+\item 
+unsigned char $\ast$ \hyperlink{classloadBuffer_ace04b355c2b23c72abd1d322dcb960ee}{get8\+Buffer} ()
 \item 
 short $\ast$ \hyperlink{classloadBuffer_aa6b14cb999de76cfce307f7036310859}{get16\+Buffer} ()
 \item 
 int \hyperlink{classloadBuffer_afdb86606188438cef499304c2a0af433}{get\+Buffer\+Size} ()
 \item 
 int \hyperlink{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}{get\+Bit\+Depth} ()
+\item 
+std\+::string \hyperlink{classloadBuffer_a0d57faf2711fc72a2b801f31f38a415e}{get\+Artist} ()
+\item 
+void \hyperlink{classloadBuffer_a200dc532492d652badbc0db7e8cd7085}{set\+Artist} (std\+::string new\+Artist)
+\item 
+std\+::string \hyperlink{classloadBuffer_a99cbb74f6dd6f788b13abfc6916207cf}{get\+Song\+Name} ()
+\item 
+void \hyperlink{classloadBuffer_a90419d6e2793c9aed6e2af2ddc44eec3}{set\+Song\+Name} (std\+::string new\+Song\+Name)
 \end{DoxyCompactItemize}
 
 
@@ -41,7 +58,19 @@ Constructor for \hyperlink{classloadBuffer}{load\+Buffer}, does not have any par
 \subsubsection{\texorpdfstring{get16\+Buffer()}{get16Buffer()}}
 {\footnotesize\ttfamily short $\ast$ load\+Buffer\+::get16\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Getter for the 16\+Bit buffer \mbox{\Hypertarget{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}\label{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}} 
+Getter for the 16\+Bit buffer \mbox{\Hypertarget{classloadBuffer_ace04b355c2b23c72abd1d322dcb960ee}\label{classloadBuffer_ace04b355c2b23c72abd1d322dcb960ee}} 
+\index{load\+Buffer@{load\+Buffer}!get8\+Buffer@{get8\+Buffer}}
+\index{get8\+Buffer@{get8\+Buffer}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{get8\+Buffer()}{get8Buffer()}}
+{\footnotesize\ttfamily unsigned char $\ast$ load\+Buffer\+::get8\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for the 8bit buffer \mbox{\Hypertarget{classloadBuffer_a0d57faf2711fc72a2b801f31f38a415e}\label{classloadBuffer_a0d57faf2711fc72a2b801f31f38a415e}} 
+\index{load\+Buffer@{load\+Buffer}!get\+Artist@{get\+Artist}}
+\index{get\+Artist@{get\+Artist}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Artist()}{getArtist()}}
+{\footnotesize\ttfamily std\+::string load\+Buffer\+::get\+Artist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for the artist \mbox{\Hypertarget{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}\label{classloadBuffer_aa4d8b0a75f4459dc0f255f62d822e14b}} 
 \index{load\+Buffer@{load\+Buffer}!get\+Bit\+Depth@{get\+Bit\+Depth}}
 \index{get\+Bit\+Depth@{get\+Bit\+Depth}!load\+Buffer@{load\+Buffer}}
 \subsubsection{\texorpdfstring{get\+Bit\+Depth()}{getBitDepth()}}
@@ -53,7 +82,13 @@ Getter for the bit depth \mbox{\Hypertarget{classloadBuffer_afdb86606188438cef49
 \subsubsection{\texorpdfstring{get\+Buffer\+Size()}{getBufferSize()}}
 {\footnotesize\ttfamily int load\+Buffer\+::get\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Getter for the buffer size \mbox{\Hypertarget{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}\label{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}} 
+Getter for the buffer size \mbox{\Hypertarget{classloadBuffer_a99cbb74f6dd6f788b13abfc6916207cf}\label{classloadBuffer_a99cbb74f6dd6f788b13abfc6916207cf}} 
+\index{load\+Buffer@{load\+Buffer}!get\+Song\+Name@{get\+Song\+Name}}
+\index{get\+Song\+Name@{get\+Song\+Name}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{get\+Song\+Name()}{getSongName()}}
+{\footnotesize\ttfamily std\+::string load\+Buffer\+::get\+Song\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Getter for the song name \mbox{\Hypertarget{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}\label{classloadBuffer_adfdc981dd37280f382467ecd6fb087c6}} 
 \index{load\+Buffer@{load\+Buffer}!read\+File@{read\+File}}
 \index{read\+File@{read\+File}!load\+Buffer@{load\+Buffer}}
 \subsubsection{\texorpdfstring{read\+File()}{readFile()}}
@@ -64,9 +99,53 @@ Reads files from a constant string reference
 {\em file\+Name} & -\/ Name of the file as a constant string reference \\
 \hline
 \end{DoxyParams}
+\mbox{\Hypertarget{classloadBuffer_a200dc532492d652badbc0db7e8cd7085}\label{classloadBuffer_a200dc532492d652badbc0db7e8cd7085}} 
+\index{load\+Buffer@{load\+Buffer}!set\+Artist@{set\+Artist}}
+\index{set\+Artist@{set\+Artist}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Artist()}{setArtist()}}
+{\footnotesize\ttfamily void load\+Buffer\+::set\+Artist (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Artist }\end{DoxyParamCaption})}
+
+Setter for the artist \mbox{\Hypertarget{classloadBuffer_a90419d6e2793c9aed6e2af2ddc44eec3}\label{classloadBuffer_a90419d6e2793c9aed6e2af2ddc44eec3}} 
+\index{load\+Buffer@{load\+Buffer}!set\+Song\+Name@{set\+Song\+Name}}
+\index{set\+Song\+Name@{set\+Song\+Name}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{set\+Song\+Name()}{setSongName()}}
+{\footnotesize\ttfamily void load\+Buffer\+::set\+Song\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Song\+Name }\end{DoxyParamCaption})}
+
+Setter for the song name \mbox{\Hypertarget{classloadBuffer_aa22aefdaddbb00ff09c0e18ba5922dff}\label{classloadBuffer_aa22aefdaddbb00ff09c0e18ba5922dff}} 
+\index{load\+Buffer@{load\+Buffer}!write\+C\+SV@{write\+C\+SV}}
+\index{write\+C\+SV@{write\+C\+SV}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{write\+C\+S\+V()}{writeCSV()}}
+{\footnotesize\ttfamily void load\+Buffer\+::write\+C\+SV (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name,  }\item[{std\+::string}]{song\+Title,  }\item[{std\+::string}]{artist }\end{DoxyParamCaption})}
+
+Writes C\+SV file containing metadata 
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ Name of file as a constant string reference \\
+\hline
+{\em song\+Title} & -\/ Name of song title as a string \\
+\hline
+{\em artist} & -\/ Name of artist as a string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classloadBuffer_af32a4655ecfa6ec67862fc85c0fac0a3}\label{classloadBuffer_af32a4655ecfa6ec67862fc85c0fac0a3}} 
+\index{load\+Buffer@{load\+Buffer}!write\+File@{write\+File}}
+\index{write\+File@{write\+File}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{write\+File()}{writeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void load\+Buffer\+::write\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classloadBuffer_a0ebc8576784119627232cff763100695}\label{classloadBuffer_a0ebc8576784119627232cff763100695}} 
+\index{load\+Buffer@{load\+Buffer}!write\+File@{write\+File}}
+\index{write\+File@{write\+File}!load\+Buffer@{load\+Buffer}}
+\subsubsection{\texorpdfstring{write\+File()}{writeFile()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void load\+Buffer\+::write\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{out\+File\+Name }\end{DoxyParamCaption})}
+
+Writes files to a referneced 
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/ Name of the file as a constant string reference \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-loadbuffer.\+h\item 
-loadbuffer.\+cpp\end{DoxyCompactItemize}
+\hyperlink{loadbuffer_8h}{loadbuffer.\+h}\item 
+\hyperlink{loadbuffer_8cpp}{loadbuffer.\+cpp}\end{DoxyCompactItemize}

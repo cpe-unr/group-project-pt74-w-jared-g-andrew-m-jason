@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7eloadbuffer',['~loadBuffer',['../classloadBuffer.html#a569f285c4f37d2880c1619842d54917a',1,'loadBuffer']]]
+  ['readfile',['readFile',['../classloadBuffer.html#adfdc981dd37280f382467ecd6fb087c6',1,'loadBuffer']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['noisegate',['NoiseGate',['../classNoiseGate.html#a9a5aafbd238dbbc01eff52edd5ef29c4',1,'NoiseGate']]]
+  ['main',['main',['../test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'test.cpp']]]
 ];
