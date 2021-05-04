@@ -49,25 +49,68 @@ int main(){
 							
 						}
 						if(a.getBitDepth() == 16){
-							processor <short>*p = new Echo_16Bit<short>(5000);
-    					p->processBuffer(a.get16Buffer(), a.getBufferSize());
+							//processing here
+						}
+						if(a.getBitDepth() == 8){
+							//processing here
 						}
 						a.writeFile();
 					}
-					//std::cin >> userInput;
-					//if(userInput == 'Y'){
-						
-					//}
-					
 				}
 				break;
 			case 2:
 				std::cout << "Applying Noise Gating\n" << std::endl;
-				//processing here
+				for(std::string file : files){
+					loadBuffer a;
+					a.readFile(file);
+					if(a.getBitDepth() == 16 || a.getBitDepth() == 8){
+						std::cout << "Would you like to change the metadata? Y/N" << std::endl;
+						std::cin >> userInput;
+						if(userInput == 'Y'){
+							std::cout << "Enter new song name: ";
+							std::cin >> songName;
+							a.setSongName(songName);
+							std::cout << "Enter new artist name: ";
+							std::cin >> artist;
+							a.setArtist(artist);
+							
+						}
+						if(a.getBitDepth() == 16){
+							//processing here
+						}
+						if(a.getBitDepth() == 8){
+							//processing here
+						}
+						a.writeFile();
+					}
+				}
 				break;
 			case 3:
 				std::cout << "Applying Echo\n" << std::endl;
-				//processing here
+				for(std::string file : files){
+					loadBuffer a;
+					a.readFile(file);
+					if(a.getBitDepth() == 16 || a.getBitDepth() == 8){
+						std::cout << "Would you like to change the metadata? Y/N" << std::endl;
+						std::cin >> userInput;
+						if(userInput == 'Y'){
+							std::cout << "Enter new song name: ";
+							std::cin >> songName;
+							a.setSongName(songName);
+							std::cout << "Enter new artist name: ";
+							std::cin >> artist;
+							a.setArtist(artist);
+							
+						}
+						if(a.getBitDepth() == 16){
+							
+						}
+						if(a.getBitDepth() == 8){
+						
+						}
+						a.writeFile();
+					}
+				}
 				break;
 			case 0:
 				std::cout << "Exiting Program" << std::endl;
@@ -77,27 +120,6 @@ int main(){
 		}
 		
 	}
-<<<<<<< HEAD
-	
-	
-=======
-	fileGetter a;
-	std::vector<std::string> files = a.getFiles(directoryName);
-	for(std::string file : files){
-		std::cout << "Would you like to modify the metadata? Y/N: ";
-		char userInput;
-		std::cin >> userInput;
-		if(userInput == 'Y'){
-			loadBuffer().writeCSV(files)
-		}
-		loadBuffer a;
-		a.readFile(file);
-		a.writeFile();
-	}
->>>>>>> 1243ef9d604c867e985737ede324db424c5ba2ec
-	loadBuffer b;
-	b.readFile("test.wav");
-	//b.readFile("wavefiles/yes-8bit-mono.wav");
 	
 	return 0;
 }
