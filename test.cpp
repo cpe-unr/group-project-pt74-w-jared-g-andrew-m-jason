@@ -1,3 +1,4 @@
+/** @file */
 #include <iostream>
 #include <fstream>
 #include "waveheader.h"
@@ -48,7 +49,7 @@ int main(){
 		char userInput;
 		std::cin >> userInput;
 		if(userInput == 'Y'){
-			
+			loadBuffer().writeCSV(files)
 		}
 		loadBuffer a;
 		a.readFile(file);
