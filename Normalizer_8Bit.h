@@ -2,12 +2,12 @@
 #define NORMALIZER_8BIT_H
 #include "processor.h"
 
-class Normalizer : public Processor{
-	uint8_t MaxValue;
+template <class T>
+class Normalizer_8Bit : public processor<T>{
 public:
-	
-	Normalizer(uint8_t initMaxValue);
-	void processBuffer(unsigned char *buffer, int bufferSize);
+	uint8_t MaxValue;
+	Normalizer_8Bit(uint16_t initMaxValue);
+	void processBuffer(T *buffer, int bufferSize);
 };
 
 #endif

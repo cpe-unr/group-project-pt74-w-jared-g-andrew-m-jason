@@ -1,13 +1,12 @@
 #ifndef NORMALIZER_16BIT_H
 #define NORMALIZER_16BIT_H
 #include "processor.h"
-
-class Normalizer : public Processor{
-	uint16_t MaxValue;
+template <class T>
+class Normalizer_16Bit : public processor<T>{
 public:
-	
-	Normalizer(uint16_t initMaxValue);
-	void processBuffer(short *buffer, int bufferSize);
+	uint16_t MaxValue;
+	Normalizer_16Bit(uint16_t initMaxValue);
+	void processBuffer(T *buffer, int bufferSize);
 };
 
 #endif
