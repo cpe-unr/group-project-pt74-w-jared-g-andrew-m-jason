@@ -7,4 +7,4 @@ filegetter.o: filegetter.h filegetter.cpp
 	g++ -c -std=c++11 filegetter.cpp
 
 clean:
-	rm *.o audio
+	rm *.o *.wav audio

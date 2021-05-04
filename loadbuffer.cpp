@@ -39,7 +39,7 @@ void loadBuffer::readFile(const std::string &fileName){
 		}
 	}
 	if(waveHeader.bit_depth == 16){
-		std::cout << "Reading 16 bit audio" << std::endl;
+		std::cout << "Reading " << fileName << std::endl;
 		BitBuffer16 = new short[waveHeader.data_bytes];
 		file.read((char *)BitBuffer16, waveHeader.data_bytes);
 		file.read((char*)list, sizeof(list));
