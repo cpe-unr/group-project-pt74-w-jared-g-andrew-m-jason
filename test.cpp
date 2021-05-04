@@ -1,3 +1,4 @@
+/** @file */
 #include <iostream>
 #include <fstream>
 #include "waveheader.h"
@@ -76,8 +77,24 @@ int main(){
 		}
 		
 	}
+<<<<<<< HEAD
 	
 	
+=======
+	fileGetter a;
+	std::vector<std::string> files = a.getFiles(directoryName);
+	for(std::string file : files){
+		std::cout << "Would you like to modify the metadata? Y/N: ";
+		char userInput;
+		std::cin >> userInput;
+		if(userInput == 'Y'){
+			loadBuffer().writeCSV(files)
+		}
+		loadBuffer a;
+		a.readFile(file);
+		a.writeFile();
+	}
+>>>>>>> 1243ef9d604c867e985737ede324db424c5ba2ec
 	loadBuffer b;
 	b.readFile("test.wav");
 	//b.readFile("wavefiles/yes-8bit-mono.wav");

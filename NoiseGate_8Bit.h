@@ -9,11 +9,10 @@ class NoiseGate_8Bit : public processor<T>{
 	uint8_t threshold;
 public:
 	/**
-	* Constructor for NoiseGate.
+	* Constructor for NoiseGate (8bit).
 	* @param initThreshold - threshold value as unsigned integer with 8bit width
 	*/
 	NoiseGate_8Bit(uint8_t initThreshold);
-	
 	
 	void processBuffer(T *buffer, int bufferSize);
 };
