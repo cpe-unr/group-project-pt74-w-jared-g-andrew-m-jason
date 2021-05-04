@@ -13,6 +13,11 @@ private:
 	unsigned char* BitBuffer8 = NULL;
 	short* BitBuffer16 = NULL;
 	wav_header waveHeader;
+	char list[4], info[4], subChunk[4];
+	int size, chunkSize;
+	std::string songName, artist;
+
+	int writeSize;
 public:
 	/**
 	* Constructor for loadBuffer, does not have any parameters.
@@ -23,9 +28,9 @@ public:
 	* @param fileName - Name of the file as a constant string reference
 	*/
 	void readFile(const std::string &fileName);
-<<<<<<< HEAD
+//<<<<<<< HEAD
 	void writeFile();
-=======
+//=======
 	/**
 	* Writes files to a referneced
 	* @param fileName - Name of the file as a constant string reference
@@ -35,7 +40,7 @@ public:
 	* Writes files to a referneced
 	* @param fileName - Name of the file as a constant string reference
 	*/
->>>>>>> 7f2835a5dc450e3ebadae0ea74021fcbde604d50
+//>>>>>>> 7f2835a5dc450e3ebadae0ea74021fcbde604d50
 	unsigned char* get8Buffer();
 	/**
 	* Getter for the 16Bit buffer
