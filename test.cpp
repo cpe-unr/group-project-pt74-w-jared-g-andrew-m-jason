@@ -44,6 +44,12 @@ int main(){
 	fileGetter a;
 	std::vector<std::string> files = a.getFiles(directoryName);
 	for(std::string file : files){
+		std::cout << "Would you like to modify the metadata? Y/N: ";
+		char userInput;
+		std::cin >> userInput;
+		if(userInput == 'Y'){
+			
+		}
 		loadBuffer a;
 		a.readFile(file);
 		a.writeFile();

@@ -15,7 +15,7 @@ private:
 	wav_header waveHeader;
 	char list[4], info[4], subChunk[4];
 	int size, chunkSize;
-	std::string songName, artist;
+	std::string songName, artist, writeString;
 
 	int writeSize;
 public:
@@ -54,6 +54,11 @@ public:
 	* Getter for the bit depth
 	*/
 	int getBitDepth();
+	
+	std::string getArtist();
+	void setArtist(std::string newArtist);
+	std::string getSongName();
+	void setSongName(std::string newSongName);
 };
 
 #endif
